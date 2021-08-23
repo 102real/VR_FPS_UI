@@ -9,9 +9,12 @@ public class HandAnimationController : MonoBehaviour
     public InputDevice thisController;
 
     private bool isContrillerDetected = false;
+    private Animator animatorController;
     void Start()
     {
         Initialise();
+        animatorController = GetComponent<Animator>();
+        
     }
 
     void Initialise()
@@ -43,10 +46,22 @@ public class HandAnimationController : MonoBehaviour
             if (thisController.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue) && triggerValue > 0.1f)
             {
                 Debug.Log("TriggerPrass");
+                animatorController.SetFloat("Trigger", triggerValue);
             }
             if (thisController.TryGetFeatureValue(CommonUsages.grip, out float gripVallue) && gripVallue > 0.1f)
             {
                 Debug.Log("TriggerPrass" + gripVallue);
+                animatorController.SetFloat("Grip", gripVallue);
+
+
+            }
+            if (thisController.TryGetFeatureValue(CommonUsages.primaryButton, out bool button1))
+            {
+                if(button1)
+                {
+                    Debug.Log("Button");
+                }
+
 
             }
         }
