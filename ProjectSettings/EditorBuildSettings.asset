@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/01.Scenes/TestScene.unity
-    guid: 7476b6e5a3cf928408f3e749208431d9
+    path: Assets/01.Scenes/MoonBase/FPS_Test_01.unity
+    guid: 5c1cefb0add62d9498ac4f954578f358
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 94f46ebc2fc569f419fca82465e5d170, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ca69d44435ac89e468685c8527ef8b63, type: 2}

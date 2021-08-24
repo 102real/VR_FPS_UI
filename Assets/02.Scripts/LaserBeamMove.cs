@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LaserBeamMove : MonoBehaviour
 {
-    public float thrust = 10f;
+    public float thrust = 100;
     private Rigidbody rb;
 
     void Start()
