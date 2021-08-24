@@ -5,11 +5,15 @@ using UnityEngine.XR;
 
 public class HandAnimationController : MonoBehaviour
 {
+    
+
     public InputDeviceCharacteristics controllerType;
     public InputDevice thisController;
 
     private bool isContrillerDetected = false;
     private Animator animatorController;
+
+    
     void Start()
     {
         Initialise();
@@ -45,21 +49,42 @@ public class HandAnimationController : MonoBehaviour
         {
             if (thisController.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue) && triggerValue > 0.1f)
             {
-                Debug.Log("TriggerPrass");
+                //Debug.Log("TriggerPrass");
                 animatorController.SetFloat("Trigger", triggerValue);
             }
             if (thisController.TryGetFeatureValue(CommonUsages.grip, out float gripVallue) && gripVallue > 0.1f)
             {
-                Debug.Log("TriggerPrass" + gripVallue);
+                //Debug.Log("TriggerPrass" + gripVallue);
                 animatorController.SetFloat("Grip", gripVallue);
 
 
             }
+
             if (thisController.TryGetFeatureValue(CommonUsages.primaryButton, out bool button1))
             {
                 if(button1)
                 {
                     Debug.Log("Button");
+                    
+                        GameManager.UIONOFF = 1;
+                        Debug.Log(GameManager.UIONOFF);
+                    
+                    
+                }
+
+
+            } 
+            
+            if (thisController.TryGetFeatureValue(CommonUsages.secondaryButton, out bool button2))
+            {
+                if(button2)
+                {
+                    Debug.Log("Button");
+                    
+                        GameManager.UIONOFF = 0;
+                        Debug.Log(GameManager.UIONOFF);
+                    
+                    
                 }
 
 

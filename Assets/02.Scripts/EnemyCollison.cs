@@ -12,6 +12,8 @@ public class EnemyCollison : MonoBehaviour
 
             Destroy(collision.gameObject);
             Destroy(gameObject);
+
+            GameManager.EnemyHit();
         }
         else
         {
