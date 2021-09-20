@@ -13,6 +13,12 @@ public class HandAnimationController : MonoBehaviour
     private bool isContrillerDetected = false;
     private Animator animatorController;
 
+    static public bool Reloard = false;
+
+    
+
+    
+
     
     void Start()
     {
@@ -66,9 +72,10 @@ public class HandAnimationController : MonoBehaviour
                 {
                     Debug.Log("Button");
                     FireLaserGun.bulletMasterR = 10;
-                    
-                    
-                    
+
+                    Reloard = true;
+
+
                 }
 
 
@@ -80,6 +87,8 @@ public class HandAnimationController : MonoBehaviour
                 {
                     Debug.Log("Button");
                     FireLaserGun.bulletMasterR = 10;
+
+                    Reloard = true;
 
 
                 }

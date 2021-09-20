@@ -17,6 +17,7 @@ public class FireLaserGun : MonoBehaviour
 
     public AudioSource fire;
     public AudioSource erro;
+    public AudioSource reload;
 
     private void Start()
     {
@@ -30,6 +31,14 @@ public class FireLaserGun : MonoBehaviour
         countTR1.text = bulletMasterR + "/10";
         countTR2.text = bulletMasterR + "/10";
         countTR3.text = bulletMasterR + " ";
+
+        if(HandAnimationController.Reloard == true)
+        {
+
+            reload.Play();
+            HandAnimationController.Reloard = false;
+
+        }
     }
 
     public void FireGun()

@@ -373,10 +373,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953292a30b7038b4da544cfeb8ba3202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vw1: {fileID: 0}
-  vw2: {fileID: 0}
-  vw3: {fileID: 0}
   controllerType: 320
+  reloard: {fileID: 1494751542174441672, guid: 6a0e80f0d141cc94187b875e86bceefe, type: 3}
 --- !u!1 &109434732395284511
 GameObject:
   m_ObjectHideFlags: 0
