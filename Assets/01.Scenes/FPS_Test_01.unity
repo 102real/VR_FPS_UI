@@ -249,6 +249,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!82 &101561998 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1494751542174441672, guid: 6a0e80f0d141cc94187b875e86bceefe, type: 3}
+  m_PrefabInstance: {fileID: 375852793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &131276269
 GameObject:
   m_ObjectHideFlags: 0
@@ -1767,7 +1772,7 @@ MonoBehaviour:
   countTR3: {fileID: 473405873}
   fire: {fileID: 1400937575}
   erro: {fileID: 456232541}
-  reload: {fileID: 0}
+  reload: {fileID: 101561998}
 --- !u!82 &906656204
 AudioSource:
   m_ObjectHideFlags: 0
