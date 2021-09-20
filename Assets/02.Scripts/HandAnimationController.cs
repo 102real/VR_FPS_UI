@@ -65,8 +65,7 @@ public class HandAnimationController : MonoBehaviour
                 if(button1)
                 {
                     Debug.Log("Button");
-                    GameManager.UIONOFF = 0;
-                    Debug.Log(GameManager.UIONOFF);
+                    FireLaserGun.bulletMasterR = 10;
                     
                     
                     
@@ -80,9 +79,7 @@ public class HandAnimationController : MonoBehaviour
                 if(button2)
                 {
                     Debug.Log("Button");
-
-                    GameManager.UIONOFF = 1;
-                    Debug.Log(GameManager.UIONOFF);
+                    FireLaserGun.bulletMasterR = 10;
 
 
                 }

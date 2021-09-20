@@ -8,7 +8,7 @@ public class EnemyCollison : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            Debug.Log("ÆÄ±¥¿ÕÁÖÈ£¹Î");
+            Debug.Log("ÆÄ±¥");
 
             Destroy(collision.gameObject);
             Destroy(gameObject);
