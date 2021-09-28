@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/01.Scenes/FPS_Test_01.unity
+    path: Assets/01.Scenes/FPS_Test_01(HUD).unity
     guid: 5c1cefb0add62d9498ac4f954578f358
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 94f46ebc2fc569f419fca82465e5d170, type: 2}
