@@ -16,14 +16,12 @@ public class HandAnimationController : MonoBehaviour
     static public bool Reloard = false;
 
     
-
-    
-
-    
     void Start()
     {
         Initialise();
         animatorController = GetComponent<Animator>();
+
+        
         
     }
 
@@ -71,9 +69,10 @@ public class HandAnimationController : MonoBehaviour
                 if(button1)
                 {
                     Debug.Log("Button");
-                    FireLaserGun.bulletMasterR = 10;
+                    
 
                     Reloard = true;
+                    
 
 
                 }
@@ -86,7 +85,7 @@ public class HandAnimationController : MonoBehaviour
                 if(button2)
                 {
                     Debug.Log("Button");
-                    FireLaserGun.bulletMasterR = 10;
+                    //FireLaserGun.bulletMasterR = 10;
 
                     Reloard = true;
 

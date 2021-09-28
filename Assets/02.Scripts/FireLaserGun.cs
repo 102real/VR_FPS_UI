@@ -28,6 +28,7 @@ public class FireLaserGun : MonoBehaviour
         countTR4.text = " "+bulletMasterR +" ";
     }
 
+
     private void Update()
     {
         countTR1.text = bulletMasterR + "/10";
@@ -39,9 +40,16 @@ public class FireLaserGun : MonoBehaviour
         {
 
             reload.Play();
+            FireLaserGun.bulletMasterR = 10;
             HandAnimationController.Reloard = false;
 
         }
+    }
+
+    public void RRord()
+    {
+        bulletMasterR = 10;
+        reload.Play();
     }
 
     public void FireGun()
