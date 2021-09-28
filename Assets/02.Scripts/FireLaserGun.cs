@@ -14,6 +14,7 @@ public class FireLaserGun : MonoBehaviour
     public TextMeshProUGUI countTR1;
     public TextMeshProUGUI countTR2;
     public TextMeshProUGUI countTR3;
+    public TextMeshProUGUI countTR4;
 
     public AudioSource fire;
     public AudioSource erro;
@@ -24,6 +25,7 @@ public class FireLaserGun : MonoBehaviour
         countTR1.text = bulletMasterR + "/10";
         countTR2.text = bulletMasterR + "/10";
         countTR3.text = " "+bulletMasterR +" ";
+        countTR4.text = " "+bulletMasterR +" ";
     }
 
     private void Update()
@@ -31,6 +33,7 @@ public class FireLaserGun : MonoBehaviour
         countTR1.text = bulletMasterR + "/10";
         countTR2.text = bulletMasterR + "/10";
         countTR3.text = bulletMasterR + " ";
+        countTR4.text = bulletMasterR + " ";
 
         if(HandAnimationController.Reloard == true)
         {

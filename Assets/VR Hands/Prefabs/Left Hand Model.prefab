@@ -374,7 +374,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controllerType: 320
-  reloard: {fileID: 1494751542174441672, guid: 6a0e80f0d141cc94187b875e86bceefe, type: 3}
 --- !u!1 &109434732395284511
 GameObject:
   m_ObjectHideFlags: 0
